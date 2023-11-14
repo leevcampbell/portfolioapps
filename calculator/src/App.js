@@ -3,6 +3,7 @@ import Wrapper from './components/Wrapper';
 import Screen from './components/Screen';
 import ButtonHolder from './components/ButtonHolder';
 import Button from './components/Button';
+import CalcProvider from './context/CalcContext';
 
 
 
@@ -17,8 +18,7 @@ const buttonValues = [
 
 function App() {
   return (
-    <div className="App">
-    
+    <CalcProvider>
       <Wrapper> 
           <Screen />
           <ButtonHolder>
@@ -29,8 +29,8 @@ function App() {
 
           </ButtonHolder>
       </Wrapper>
+    </CalcProvider>
     
-    </div>
   );
 }
 
