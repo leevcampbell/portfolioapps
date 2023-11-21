@@ -51,7 +51,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Calendar</h1>
+      <h1>Simple Calendar</h1>
       <h2>Add Event</h2>
       <div>
         <input type="text" 
@@ -72,7 +72,8 @@ function App() {
      localizer={localizer} 
      events={allEvents} 
      startAccessor="start" 
-     endAccessor="end" style={{ height: 500, margin: "50px" }} />
+     endAccessor="end" style={{ height: 500, margin: "50px" }}
+      />
     </div>
   );
 }
