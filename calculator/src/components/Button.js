@@ -19,7 +19,7 @@ const Button = ({value}) => {
 
     
    const {calc, setCalc} = useContext(CalcContext);
-   console.log(setCalc)
+   
 
     // User click comma
     const commaClick = () => {
